@@ -61,13 +61,5 @@ def scrape_list(url)
   puts "Added #{count}"
 end
 
-term = {
-  id: 8,
-  name: 'VIII Legislature',
-  start_date: '2015-01-12',
-  source: 'http://en.wikipedia.org/w/index.php?title=Mozambican_general_election,_2014&oldid=656273062#Aftermath',
-}
-ScraperWiki.save_sqlite([:id], term, 'terms')
-
 scrape_list('http://www.parlamento.mz/deputados/deputado/lista-alfabetica/21-deputados/629-genero')
 
